@@ -4,6 +4,7 @@ def Longest_Collatz_sequence(x,chain,record):
     for x in range(x, 1000000):
         if record == 524:
             print(x-1)
+            break
         Loop = True
         while  Loop == True:
             if x % 2 == 0:
@@ -20,8 +21,5 @@ def Longest_Collatz_sequence(x,chain,record):
     print(record)
 
 Longest_Collatz_sequence(2,0,0)
-
-
-
 end = time.time()
 print(end - start)
