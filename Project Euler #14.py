@@ -6,7 +6,7 @@ def Longest_Collatz_sequence(chain, record):
         if chain > record:
             record = chain
             if record == 524:
-                print(x-1)
+                print(x-2)
                 break
         chain = 0
         while x > 1:
