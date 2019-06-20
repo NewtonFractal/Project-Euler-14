@@ -1,13 +1,12 @@
 import time
 start = time.time()
+Longest = []
 
 def Longest_Collatz_sequence(chain, record):
     for x in range(3,1000000,2):
         if chain > record:
             record = chain
-            if record == 524:
-                print(x-2)
-                break
+            Longest.append(x-1)
         chain = 0
         while x > 1:
             if x % 2 == 0:
@@ -20,3 +19,4 @@ def Longest_Collatz_sequence(chain, record):
 Longest_Collatz_sequence(0,0)
 end = time.time()
 print(end - start)
+print(max(Longest))
