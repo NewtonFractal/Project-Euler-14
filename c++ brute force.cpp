@@ -1,7 +1,9 @@
 #include <iostream>
+#include<ctime> 
 using namespace std;
 int chain = 0;
 int record = 0;
+int start_s=clock() ;
 int main()
 {
 	for (int x = 3; x < 1000000; x += 2) {
@@ -22,4 +24,6 @@ int main()
 			}
 		}
 	}
+	int stop_s=clock();
+    cout<<(stop_s-start_s)/double(CLOCKS_PER_SEC);
 }
