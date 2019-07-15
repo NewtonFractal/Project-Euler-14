@@ -16,8 +16,8 @@ def Longest_Collatz_sequence(chain, record):
                 x /= 2
                 chain += 1
             else:
-                x = 3*x +1
-                chain += 1
+                x = (3*x +1)/2
+                chain += 2
                 if x in numbers:
                     z = numbers.index(x)
                     if Longest[z] + chain > record:
