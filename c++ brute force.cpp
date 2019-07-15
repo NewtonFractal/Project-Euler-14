@@ -19,8 +19,8 @@ int main()
 				chain++;
 			}
 			else {
-				y = 3 * y + 1;
-				chain++;
+				y = (3 * y + 1)/2;
+				chain += 2;
 			}
 		}
 	}
