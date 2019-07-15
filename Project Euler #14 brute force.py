@@ -13,8 +13,8 @@ def Longest_Collatz_sequence(chain, record):
                 x /= 2
                 chain += 1
             else:
-                x = 3*x +1
-                chain += 1
+                x = (3*x +1)/2
+                chain += 2
 
 Longest_Collatz_sequence(0,0)
 end = time.time()
