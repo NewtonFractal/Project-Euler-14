@@ -10,9 +10,6 @@ def Longest_Collatz_sequence(chain,record):
         chain = 0
         while x > 1:
             if x % 2 == 0:
-                if x in numbers:
-                    chain += numbers[x]
-                    break
                 x /= 2
                 chain += 1
             else:
