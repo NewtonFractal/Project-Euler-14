@@ -7,6 +7,7 @@ def Longest_Collatz_sequence(chain,record):
         y = x
         if chain > record:
             record = chain
+            record2 = y-2
         chain = 0
         while x > 1:
             if x % 2 == 0:
@@ -19,7 +20,7 @@ def Longest_Collatz_sequence(chain,record):
                 x = (3*x+1)/2
                 chain += 2
         numbers[y] = chain
-    print(record)
+    print(record2)
 
 Longest_Collatz_sequence(0,0)
 end = time.time()
