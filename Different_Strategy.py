@@ -6,8 +6,7 @@ def Longest_Collatz_sequence(chain,record):
     for x in range(3,1000000,2):
         y = x
         if chain > record:
-            record = chain
-            record2 = y-2
+            record2,record = y-2, chain
         chain = 0
         while x > 1:
             if x % 2 == 0:
