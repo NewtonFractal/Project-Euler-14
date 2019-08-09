@@ -1,9 +1,0 @@
-By modular arithmetic every natural number must be either even or odd.
-
-suppose that the longest sequence is produced an even number x.
-It must be greater 499998 because otherwise it can be multiplied by 2.
-the number x is divided by 2 until it is no longer even.
-Since the even number must be less than 1000000 the odd number that is produced by dividing by 2 must be less than 500000.  
-So the longest sequence is therefore (an odd number less than 500000)*(2^n) = x , x < 1000000.
-
-otherwise the longest sequence must be produced by an odd number greater than 499999. 
